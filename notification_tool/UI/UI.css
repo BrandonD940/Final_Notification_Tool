@@ -1,0 +1,129 @@
+body 
+{
+  margin: 2;
+  border: 2;
+  padding: 2;
+  width: 250px;
+  height: 150px;
+  font-size: 14px;
+  overflow: hidden;
+  user-select: none;
+  background-color: rgb(90, 90, 90);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.accounts 
+{
+  width: 100%;
+  empty-cells: show;
+  table-layout: fixed;
+  border-spacing: 12px;
+}
+
+.refresh
+{
+  border: 0;
+  padding: 0;
+  width: 100%;
+  color: rgb(3, 185, 240);
+  height: 38px;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  cursor: default;
+  font-family: 'Courier New', Courier, monospace;
+  border-right: solid 3px rgba(0, 0, 0, 0);
+}
+
+.tool span 
+{
+  border: 0;
+  color: rgb(0, 0, 0);
+  width: 36px;
+  height: 36px;
+  display: inline;
+  line-height: 36px;
+  position: relative;
+  text-align: center;
+}
+
+.tool span[type] 
+{
+  top: 0px;
+  left: 60px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  border: solid 3px rgba(0, 0, 0, 0);
+}
+
+.accounts tr td 
+{
+  height: 90px;
+  cursor: pointer;
+  transition: 200ms linear;
+  background-repeat: no-repeat;
+  background-position: 38% 78%;
+}
+
+.accounts tr td[type='gmail'] {background-image: url('./accounts/gmail.png')}
+.accounts tr td[type='outlook'] {background-image: url('./accounts/outlook.png')}
+
+.accounts tr td[type] 
+{
+  background-size: 32px !important;
+  border: solid 3px rgba(0, 0, 0, 0);
+}
+
+.accounts tr td[type]:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.controls-table 
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: auto;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: solid 3px rgba(0, 0, 0, 0);
+}
+
+.controls-table tr td 
+{
+  cursor: pointer;
+  transition: 200ms linear;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.controls-table tr td:hover 
+{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.controls-table tr td svg 
+{
+  fill: #777;
+  pointer-events: none;
+  vertical-align: middle;
+}
+
+#status 
+{
+  border: 0;
+  padding: 0;
+  width: 100%;
+  color: rgb(3, 185, 240);
+  height: 38px;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  cursor: default;
+  font-family: 'Courier New', Courier, monospace;
+  border-right: solid 3px rgba(0, 0, 0, 0);
+}
